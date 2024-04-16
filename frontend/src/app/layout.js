@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
             <Navbar />
             <Aside />
             <div className="p-4 sm:ml-64">
-              <div className="mt-14">
+              <div className="mt-20">
                
             {children}
               </div>

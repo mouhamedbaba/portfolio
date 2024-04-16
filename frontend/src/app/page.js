@@ -1,9 +1,8 @@
-import Image from "next/image";
+import { RecentProjet } from "@/components/Home/RecentProjet";
+
 
 export default function Home() {
   return (
-    <div className="">
-      klm
-    </div>
+    <RecentProjet/>
   );
 }

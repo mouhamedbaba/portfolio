@@ -31,30 +31,28 @@ export const Navbar = () => {
               </svg>
             </button>
             <a href="/" className="flex ms-2 md:me-24">
-              <img
+              {/* <img
                 src="https://flowbite.com/docs/images/logo.svg"
                 className="h-8 me-3 rounded-b-full"
                 alt="FlowBite Logo"
-              />
+              /> */}
               <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
                 ADMIN
               </span>
             </a>
+            <button className="ms-14 flex justify-between bg-primary hover:opacity-80 py-4 px-3 rounded-lg gap-10">
+              <div className="flex gap-2">
+                <Search />
+                Search
+              </div>
+              <h3>ctrlK</h3>
+            </button>
           </div>
           <div className="flex items-center">
-            <button className="flex justify-between bg-primary hover:bg-gray-600 py-4 px-2 rounded-lg gap-8">
-            <div className="flex gap-3">
-            <Search />
-            Search
-            </div>
-            <h3>ctrlK</h3>
-            </button>
-                <ToggleTheme/>
+            <ToggleTheme />
             <div className="flex items-center ms-3">
               <div>
-                
                 <button
-                
                   type="button"
                   className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                   aria-expanded="false"
