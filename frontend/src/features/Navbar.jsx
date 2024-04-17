@@ -40,7 +40,7 @@ export const Navbar = () => {
                 ADMIN
               </span>
             </a>
-            <button className="ms-14 flex justify-between bg-primary hover:opacity-80 py-4 px-3 rounded-lg gap-10">
+            <button className="ms-14 flex justify-between bg-primary hover:opacity-80 py-4 px-3 rounded-lg gap-16">
               <div className="flex gap-2">
                 <Search />
                 Search

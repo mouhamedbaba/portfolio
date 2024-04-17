@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { CardProject } from '../CardProject'
 import clsx from 'clsx'
 
-export const RecentProjet = () => {
+export const FavoriteProject = () => {
 
     const [collapse, setCollapse] = useState(true)
     const [recentProject, setRecentProject] = useState([])
@@ -71,7 +71,7 @@ export const RecentProjet = () => {
             weight="bold"
           />
         </button>
-          <h3 className=" font-bold text-slate-300">Projets Recents</h3>
+          <h3 className="font-bold text-slate-300">Projets Favoris</h3>
         </div>
         <a href="#" className='text-sm font-semibold hover:opacity-85'>Voir tous</a>
         </div>

@@ -2,10 +2,10 @@
 
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
-import { CardProject } from '../CardProject'
 import clsx from 'clsx'
+import { ListProject } from '../ListProject'
 
-export const RecentProjet = () => {
+export const PendingProject = () => {
 
     const [collapse, setCollapse] = useState(true)
     const [recentProject, setRecentProject] = useState([])
@@ -71,7 +71,7 @@ export const RecentProjet = () => {
             weight="bold"
           />
         </button>
-          <h3 className=" font-bold text-slate-300">Projets Recents</h3>
+          <h3 className="font-bold text-slate-300">Projets en cours</h3>
         </div>
         <a href="#" className='text-sm font-semibold hover:opacity-85'>Voir tous</a>
         </div>
@@ -83,11 +83,11 @@ export const RecentProjet = () => {
           </div>
         )
       }
-        <div className={clsx(collapse ?  'grid' : 'hidden', 'mt-4 grid-col-1  md:grid-cols-2 lg:grid-cols-3 gap-3 xl:grid-cols-4 ')} >
+        <div className={clsx(collapse ?  'block' : 'hidden', ' divide-y mt-4 divide-gray-400 bg-secondary  rounded-md overflow-hidden')} >
         {
           recentProject.map((project)=>{
             return(
-              <CardProject key={project.id} project={project} />
+              <ListProject key={project.id} project={project} />
             )
           })
         }
