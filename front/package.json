@@ -1,0 +1,32 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main/main.js",
+  "author": "RBFraphael",
+  "description": "Electron + NextJS example project",
+  "scripts": {
+    "dev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev\" \"electron .\"",
+    "build": "next build && electron-builder",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "electron-serve": "^1.3.0",
+    "lucide-react": "^0.372.0",
+    "next": "14.2.2",
+    "next-themes": "^0.3.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}

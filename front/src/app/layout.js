@@ -1,4 +1,3 @@
-
 import { Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
@@ -21,8 +20,8 @@ export default function RootLayout({ children }) {
           <div className="min-h-full">
             <Navbar />
             <Aside />
-            <div className="p-4 sm:ml-64">
-              <div className="mt-20">
+            <div className="p-2 sm:ml-48">
+              <div className="mt-16">
                
             {children}
               </div>

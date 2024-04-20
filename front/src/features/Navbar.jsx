@@ -5,7 +5,7 @@ import React from "react";
 export const Navbar = () => {
   return (
     <nav className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-secondary dark:border-gray-700">
-      <div className="px-3 py-3 lg:px-5 lg:pl-3">
+      <div className="px-3 py-2 lg:px-5 lg:pl-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-start rtl:justify-end">
             <button
@@ -40,7 +40,7 @@ export const Navbar = () => {
                 ADMIN
               </span>
             </a>
-            <button className="ms-14 flex justify-between bg-primary hover:opacity-80 py-4 px-3 rounded-lg gap-16">
+            <button className="ms-14 flex justify-between bg-primary hover:opacity-80 py-2 px-3 rounded-lg gap-16">
               <div className="flex gap-2">
                 <Search />
                 Search
