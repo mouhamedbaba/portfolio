@@ -1,5 +1,5 @@
 import os
-from constants import DB
+from .constants import DB
 
 class AppConfig:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret'

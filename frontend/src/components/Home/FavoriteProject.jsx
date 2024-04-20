@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { CardProject } from '../CardProject'
 import clsx from 'clsx'
 
+
 export const FavoriteProject = () => {
 
     const [collapse, setCollapse] = useState(true)

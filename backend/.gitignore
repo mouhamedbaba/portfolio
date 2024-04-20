@@ -1,2 +1,12 @@
 .venv/
 .venv
+migrations/
+instance/
+
+*.pyc
+*.log
+*.pyo
+*.pyd
+*.so
+*.a
+.env
